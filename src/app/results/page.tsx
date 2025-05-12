@@ -4,9 +4,11 @@ import { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { PrizeWonDisplay } from '@/components/quiz/PrizeWonDisplay';
+import { FeedbackForm } from '@/components/feedback/FeedbackForm';
 import { getPrizeForScore } from '@/lib/questions';
 import { Home, RotateCcw } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Separator } from '@/components/ui/separator';
 
 function ResultsContent() {
   const router = useRouter();
@@ -17,8 +19,6 @@ function ResultsContent() {
   const score = scoreString ? parseInt(scoreString, 10) : null;
 
   if (!teacherName || score === null || isNaN(score)) {
-    // This case should ideally be handled by redirecting from quiz page or showing error there
-    // Adding a fallback here just in case.
     return (
       <div className="container mx-auto px-4 py-8 text-center">
         <h1 className="text-2xl font-semibold mb-4 text-destructive">Sonuçlar Görüntülenemiyor</h1>
@@ -43,15 +43,12 @@ function ResultsContent() {
           <Home className="mr-2 h-5 w-5" /> Ana Sayfaya Dön
         </Button>
       </div>
+      <Separator className="my-8 md:my-12 max-w-md" />
+      <FeedbackForm teacherName={teacherName} />
     </div>
   );
 }
 
-
-// ResultsPage component needs to be a Client Component to use `useSearchParams`.
-// However, to use Suspense correctly for searchParams, the component that calls useSearchParams
-// must be wrapped in Suspense.
-// So, we create a main component and a child component that uses the hook.
 export default function ResultsPage() {
   return (
     <Suspense fallback={<ResultsSkeleton />}>
@@ -76,9 +73,13 @@ function ResultsSkeleton() {
         <Skeleton className="h-12 flex-1" />
         <Skeleton className="h-12 flex-1" />
       </div>
+      <Separator className="my-8 md:my-12 max-w-md" />
+      <div className="w-full max-w-md">
+        <Skeleton className="h-10 w-1/2 mb-2" />
+        <Skeleton className="h-8 w-3/4 mb-4" />
+        <Skeleton className="h-24 w-full mb-4" />
+        <Skeleton className="h-12 w-full" />
+      </div>
     </div>
   );
 }
-
-// Metadata for this page is defined in src/app/results/layout.tsx
-// Removed metadata export from here as it was causing an error with "use client" directive.

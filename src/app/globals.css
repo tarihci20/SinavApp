@@ -7,42 +7,42 @@
     --background: 0 0% 100%; /* Neutral: White */
     --foreground: 240 10% 3.9%; /* Neutral: Dark Gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 0 0% 100%; /* Neutral: White */
+    --card-foreground: 240 10% 3.9%; /* Neutral: Dark Gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%; /* Neutral: White */
+    --popover-foreground: 240 10% 3.9%; /* Neutral: Dark Gray */
 
-    --primary: 120 39% 49.2%; /* Green: #4CAF50 */
+    --primary: 139 41% 48%; /* Green: #4CAF50 hsl(139, 41%, 48%) */
     --primary-foreground: 0 0% 100%; /* White text on green */
 
-    --secondary: 216 100% 97%; /* Lighter blue for secondary elements */
-    --secondary-foreground: 240 10% 3.9%;
+    --secondary: 216 100% 97%; /* Lighter blue for secondary elements, derived from #E6F0FF */
+    --secondary-foreground: 240 10% 3.9%; /* Dark Gray, for good contrast */
 
-    --muted: 220 10% 90%; /* Muted gray */
-    --muted-foreground: 220 10% 45%;
+    --muted: 220 14% 96%; /* Lighter Muted Gray */
+    --muted-foreground: 220 9% 45%; /* Darker Muted Gray */
 
-    --accent: 216 100% 95.1%; /* Soothing Blue: #E6F0FF */
-    --accent-foreground: 216 100% 20%; /* Darker blue for text on accent */
+    --accent: 220 100% 95%; /* Soothing Blue: #E6F0FF hsl(220, 100%, 95%) */
+    --accent-foreground: 220 44% 25%; /* Darker blue for text on accent, ensuring contrast */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%; /* Default Destructive Red */
+    --destructive-foreground: 0 0% 98%; /* Light text on destructive */
 
-    --border: 220 10% 85%;
-    --input: 220 10% 90%;
-    --ring: 120 39% 49.2%; /* Green for ring focus */
+    --border: 220 13% 91%; /* Slightly off-white border */
+    --input: 220 13% 91%; /* Consistent with border for input fields */
+    --ring: 139 41% 48%; /* Green for ring focus, matching primary */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* Default radius for rounded corners */
 
     /* Sidebar specific, updated for consistency */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 120 39% 49.2%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 216 100% 95.1%;
-    --sidebar-accent-foreground: 216 100% 20%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 120 39% 49.2%;
+    --sidebar-background: 0 0% 98%; /* Very Light Gray */
+    --sidebar-foreground: 240 5.3% 26.1%; /* Dark Gray */
+    --sidebar-primary: 139 41% 48%; /* Green */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 220 100% 95%; /* Soothing Blue */
+    --sidebar-accent-foreground: 220 44% 25%; /* Darker Blue */
+    --sidebar-border: 220 13% 91%; /* Light Gray Border */
+    --sidebar-ring: 139 41% 48%; /* Green */
 
      /* Chart colors (can be adjusted if charts are needed) */
     --chart-1: 12 76% 61%;
@@ -62,34 +62,34 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 120 39% 55%; /* Slightly lighter green for dark mode */
+    --primary: 139 41% 55%; /* Slightly lighter green for dark mode */
     --primary-foreground: 0 0% 10%; 
 
-    --secondary: 216 100% 15%; /* Darker blue for secondary */
+    --secondary: 220 100% 10%; /* Darker soothing blue for secondary */
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 216 10% 15%;
-    --muted-foreground: 216 10% 65%;
+    --muted: 220 10% 15%; /* Darker Muted Gray */
+    --muted-foreground: 220 10% 65%; /* Lighter Muted Gray for text */
 
-    --accent: 216 100% 15%; /* Dark soothing blue */
-    --accent-foreground: 216 100% 90%;
+    --accent: 220 100% 10%; /* Dark soothing blue for accent background */
+    --accent-foreground: 220 100% 85%; /* Lighter soothing blue for text on accent */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%; /* Darker Destructive Red */
+    --destructive-foreground: 0 0% 98%; /* Light text on destructive */
 
-    --border: 216 10% 15%;
-    --input: 216 10% 15%;
-    --ring: 120 39% 55%;
+    --border: 220 10% 15%; /* Dark Border */
+    --input: 220 10% 15%; /* Dark Input */
+    --ring: 139 41% 55%; /* Lighter Green for ring focus */
 
     /* Sidebar dark */
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 120 39% 55%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 216 100% 15%;
-    --sidebar-accent-foreground: 216 100% 90%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 120 39% 55%;
+    --sidebar-background: 240 5.9% 10%; /* Dark Gray for Sidebar */
+    --sidebar-foreground: 240 4.8% 95.9%; /* Light Gray Text */
+    --sidebar-primary: 139 41% 55%; /* Lighter Green */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 220 100% 10%; /* Dark Soothing Blue */
+    --sidebar-accent-foreground: 220 100% 85%; /* Lighter Soothing Blue */
+    --sidebar-border: 240 3.7% 15.9%; /* Darker Border */
+    --sidebar-ring: 139 41% 55%; /* Lighter Green */
 
     /* Chart dark colors */
     --chart-1: 220 70% 50%;
@@ -106,5 +106,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans), sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans), sans-serif;
   }
 }

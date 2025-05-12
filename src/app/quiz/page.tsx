@@ -8,8 +8,6 @@ export const metadata: Metadata = {
 
 export default function QuizPage() {
   return (
-    // Suspense boundary could be added here if QuizClient fetched data server-side initially
-    // For now, QuizClient handles its own loading state for teacherName.
     <QuizClient />
   );
 }

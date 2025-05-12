@@ -23,3 +23,12 @@ export interface QuizResult {
   prizeName: string;
   date: string; // ISO string date
 }
+
+export interface TeacherFeedback {
+  id: string; // Unique ID for the feedback
+  teacherName: string;
+  feedbackText: string;
+  sentiment: "positive" | "negative" | "neutral" | "mixed";
+  sentimentExplanation?: string;
+  date: string; // ISO string date
+}
