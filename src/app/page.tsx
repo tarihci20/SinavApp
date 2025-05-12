@@ -34,10 +34,10 @@ export default function HomePage() {
     <div className="container mx-auto px-4 py-8 md:py-12">
       <section className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-          SınavMaster'a Hoş Geldiniz!
+          Vildan Koleji Ortaokulu Bilgi Yarışması'na Hoş Geldiniz!
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-          Bilginizi ölçün, eğlenin ve harika ödüller kazanın! Sınavımız 20 sorudan oluşmakta ve her soru için 30 saniye süreniz bulunmaktadır.
+          Bilginizi ölçün, eğlenin ve harika ödüller kazanın! Yarışmamız 20 sorudan oluşmakta ve her soru için 30 saniye süreniz bulunmaktadır.
         </p>
       </section>
 
@@ -47,7 +47,7 @@ export default function HomePage() {
             <User className="h-6 w-6 text-primary" />
             Öğretmen Bilgileri
           </CardTitle>
-          <CardDescription>Lütfen sınava başlamadan önce adınızı ve soyadınızı giriniz.</CardDescription>
+          <CardDescription>Lütfen yarışmaya başlamadan önce adınızı ve soyadınızı giriniz.</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -64,7 +64,7 @@ export default function HomePage() {
               />
             </div>
             <Button type="submit" className="w-full text-lg py-3">
-              Sınava Başla <ArrowRight className="ml-2 h-5 w-5" />
+              Yarışmaya Başla <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </form>
         </CardContent>
@@ -73,11 +73,11 @@ export default function HomePage() {
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-center mb-8 flex items-center justify-center gap-2">
           <Info className="h-8 w-8 text-primary" />
-          Sınav Kuralları ve Ödüller
+          Yarışma Kuralları ve Ödüller
         </h2>
         <div className="bg-accent/50 p-6 rounded-lg mb-8 shadow">
             <p className="text-center text-muted-foreground text-lg">
-                Sınavda toplam <strong>20 soru</strong> bulunmaktadır. Her soru için <strong>30 saniye</strong> cevaplama süreniz vardır. Başarılar dileriz!
+                Yarışmada toplam <strong>20 soru</strong> bulunmaktadır. Her soru için <strong>30 saniye</strong> cevaplama süreniz vardır. Başarılar dileriz!
             </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">

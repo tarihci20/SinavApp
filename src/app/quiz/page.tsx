@@ -2,8 +2,8 @@ import { QuizClient } from '@/components/quiz/QuizClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sınav | SınavMaster',
-  description: 'SınavMaster - Bilginizi ölçün ve ödüller kazanın!',
+  title: 'Bilgi Yarışması | Vildan Koleji',
+  description: 'Vildan Koleji - Bilginizi ölçün ve ödüller kazanın!',
 };
 
 export default function QuizPage() {
