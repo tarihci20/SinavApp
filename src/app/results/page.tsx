@@ -80,9 +80,5 @@ function ResultsSkeleton() {
   );
 }
 
-// Metadata can still be defined for server-rendered part of the page
-export const metadata = {
-  title: 'Sınav Sonucu | SınavMaster',
-  description: 'Sınav sonucunuzu ve kazandığınız ödülü görüntüleyin.',
-};
-
+// Metadata for this page is defined in src/app/results/layout.tsx
+// Removed metadata export from here as it was causing an error with "use client" directive.
