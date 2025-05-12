@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { PrizeWonDisplay } from '@/components/quiz/PrizeWonDisplay';
 import { getPrizeForScore } from '@/lib/questions';
-import { ArrowLeft, Home, RotateCcw } from 'lucide-react';
+import { Home, RotateCcw } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 
 function ResultsContent() {
