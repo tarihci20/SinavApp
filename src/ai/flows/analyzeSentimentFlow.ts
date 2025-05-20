@@ -8,7 +8,7 @@
  */
 
 import { ai } from '@/ai/genkit';
-import { z } from 'genkit/zod';
+import { z } from 'genkit'; // Changed from 'genkit/zod'
 
 export const AnalyzeSentimentInputSchema = z.object({
   feedbackText: z.string().min(1).describe('The feedback text to be analyzed.'),
